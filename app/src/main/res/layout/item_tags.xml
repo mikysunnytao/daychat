@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <net.csdn.roundview.RoundTextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="154pt"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:includeFontPadding="false"
+        android:paddingStart="70pt"
+        android:layout_marginBottom="20pt"
+        android:paddingEnd="70pt"
+        android:text="# 한글"
+        android:textColor="@color/black"
+        android:textSize="45pt"
+        app:rRadius="77pt"/>
+</FrameLayout>

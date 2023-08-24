@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_short"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="298pt"
+                android:layout_height="59pt"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="95pt"
+                android:src="@mipmap/ic_short_logo" />
+
+            <View
+                android:layout_width="4pt"
+                android:layout_height="45pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="34pt"
+                android:background="#4Dffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="85pt"
+                android:layout_marginStart="34pt"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="SHORT"
+                android:textColor="@color/white"
+                android:textSize="64pt" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="95pt"
+                android:src="@drawable/ic_circle_close" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

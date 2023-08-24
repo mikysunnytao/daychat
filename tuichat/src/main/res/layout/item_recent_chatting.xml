@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <net.csdn.roundview.RoundFrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="360pt"
+        android:layout_height="155pt"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rRadius="100pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10pt">
+
+                <net.csdn.roundview.CircleImageView
+                    android:id="@+id/iv_chat_header"
+                    android:layout_width="130pt"
+                    android:layout_height="130pt"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/iv_message_count"
+                    android:layout_width="36pt"
+                    android:layout_height="36pt"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_red_dot" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="45pt"
+                android:layout_marginEnd="70pt"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="# 골프" />
+        </LinearLayout>
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="155pt"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#99000000"
+            app:rRadius="100pt">
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="70pt"
+                android:layout_height="70pt"
+                android:src="@drawable/ic_previous" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="70pt"
+                android:layout_height="70pt"
+                android:layout_marginStart="46.33pt"
+                android:src="@drawable/ic_close_circle_white" />
+
+        </net.csdn.roundview.RoundLinearLayout>
+    </net.csdn.roundview.RoundFrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

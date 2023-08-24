@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/bottom_menu_add">
+    <target
+        android:name="add_btn"
+        android:animation="@animator/translation_y" />
+    <target
+        android:name="add"
+        android:animation="@animator/shape_animator" />
+</animated-vector>

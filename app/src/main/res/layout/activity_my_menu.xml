@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_main"
+    android:background="#33000000">
+
+    <net.csdn.roundview.RoundFrameLayout
+        android:id="@+id/fl_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_90"
+        android:layout_marginTop="@dimen/dp_44"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#8E8E8E"
+        app:rBottomLeftRadius="@dimen/dp_30"
+        app:rTopLeftRadius="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="@dimen/dp_260"
+            android:fontFamily="@font/pretendard_bold"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.1"
+            android:rotation="90"
+            android:text="MESSAGE"
+            android:textColor="@color/white"
+            android:textSize="54pt" />
+    </net.csdn.roundview.RoundFrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_wallet_bg"
+        android:layout_width="match_parent"
+        android:layout_marginStart="295pt"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_height="match_parent">
+        <net.csdn.roundview.RoundFrameLayout
+            android:layout_marginStart="15pt"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="match_parent"
+            android:background="#3dd272"
+            app:rBottomLeftRadius="@dimen/dp_30"
+            app:rTopLeftRadius="@dimen/dp_30">
+
+            <TextView
+                android:id="@+id/wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="@dimen/dp_140"
+                android:fontFamily="@font/pretendard_bold"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.1"
+                android:rotation="90"
+                android:text="WALLET"
+                android:textColor="@color/white"
+                android:textSize="54pt"
+                android:textStyle="bold" />
+
+
+        </net.csdn.roundview.RoundFrameLayout>
+        <net.csdn.roundview.RoundFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<!--            <net.csdn.roundview.RoundTextView-->
+<!--                android:layout_width="200pt"-->
+<!--                android:layout_height="200pt"-->
+<!--                android:background="@color/white"-->
+<!--                app:rRadius="@dimen/dp_30"-->
+<!--                app:rStrokeColor="@color/black"-->
+<!--                app:rStrokeWidth="15pt" />-->
+            <net.csdn.roundview.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="200pt"
+                app:rStrokeWidth="15pt"
+                android:scaleType="centerCrop"
+                app:rStrokeColor="@color/black"
+                android:layout_height="200pt"/>
+
+            <net.csdn.roundview.RoundTextView
+                android:id="@+id/rt_message_num"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="end"
+                android:fontFamily="@font/pretendard_semibold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="33pt"
+                android:background="@color/read_dot_bg"
+                app:rRadius="@dimen/dp_10"/>
+        </net.csdn.roundview.RoundFrameLayout>
+
+    </FrameLayout>
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="310pt"
+        android:layout_marginTop="150pt"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#222222"
+        app:rTopLeftRadius="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="95pt">
+
+            <ImageView
+                android:layout_width="90pt"
+                android:layout_height="90pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="70pt"
+                android:src="@mipmap/ic_search_white" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="70pt"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:layout_height="70pt"
+                android:src="@drawable/ic_white_delete" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="60pt">
+
+                       <ImageView
+                           android:layout_width="565pt"
+                           android:src="@drawable/logo_yellow"
+                           android:layout_marginEnd="71pt"
+                           android:layout_height="112pt"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="44pt"
+                        android:layout_marginEnd="95pt"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:letterSpacing="0.1"
+                        android:includeFontPadding="false"
+                        android:text="@string/my_page"
+                        android:textColor="@color/white"
+                        android:textSize="54pt" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2pt"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:background="@color/color_yellow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="@dimen/dp_27">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:letterSpacing="0.1"
+                                android:text=""
+                                android:textColor="@color/color_green"
+                                android:textSize="52pt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15pt"
+                                android:fontFamily="@font/pretendard_regular"
+                                android:includeFontPadding="false"
+                                android:letterSpacing="0.1"
+                                android:text="프로필관련 텍스트"
+                                android:textColor="#ababab"
+                                android:textSize="40pt" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_change_mood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="42pt">
+
+                                <ImageView
+                                    android:layout_width="70pt"
+                                    android:layout_height="70pt"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@mipmap/ic_add_green" />
+
+                                <TextView
+                                    android:id="@+id/tv_mood"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="15dp"
+                                    android:fontFamily="@font/pretendard_regular"
+                                    android:includeFontPadding="false"
+                                    android:letterSpacing="0.1"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="52pt" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <net.csdn.roundview.RoundFrameLayout
+                            android:layout_width="260pt"
+                            android:layout_height="260pt"
+                            android:layout_marginEnd="@dimen/dp_15"
+                            app:rRadius="@dimen/dp_40"
+                            app:rStrokeColor="@color/black"
+                            app:rStrokeWidth="15pt">
+
+                            <net.csdn.roundview.CircleImageView
+                                android:id="@+id/iv_user_header"
+                                android:layout_width="220pt"
+                                android:layout_height="220pt"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                app:rStrokeColor="@color/white"
+                                app:rStrokeWidth="5pt" />
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+                                android:layout_gravity="end|bottom"
+                                android:src="@mipmap/ic_add_green" />
+                        </net.csdn.roundview.RoundFrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="123pt"
+                        android:layout_marginTop="125pt">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pretendard_semibold"
+                            android:letterSpacing="0.1"
+                            android:text="FAVORITE"
+                            android:textColor="@color/color_yellow"
+                            android:textSize="58pt"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="80pt"
+                            android:layout_height="80pt"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="95pt">
+
+                            <View
+                                android:layout_width="44pt"
+                                android:layout_height="6pt"
+                                android:background="@color/color_yellow"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2pt"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="36pt"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="88pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.1"
+                            android:text="내 작품"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="75pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.1"
+                            android:text="즐겨찾기"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pretendard_bold"
+                            android:letterSpacing="0.1"
+                            android:text="SETTING"
+                            android:textColor="@color/color_yellow"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="80pt"
+                            android:layout_height="80pt"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="95pt">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_more_yellow" />
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2pt"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_friend_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="87pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.1"
+                            android:text="친구설정"
+                            android:textColor="@color/white"
+                            android:textSize="52pt" />
+
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="70pt"
+                            android:layout_height="70pt"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="46pt"
+                            android:fontFamily="@font/pretendard_semibold"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="8"
+                            android:textColor="@color/white"
+                            android:textSize="33pt"
+                            android:background="@color/read_dot_bg"
+                            app:rRadius="@dimen/dp_10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_language_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="75pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.1"
+                            android:text="언어설정"
+                            android:textColor="@color/white"
+                            android:textSize="52pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_other_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="75pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:text="기타설정"
+                            android:textColor="@color/white"
+                            android:textSize="52pt" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3pt"
+                        android:layout_marginStart="123pt"
+                        android:layout_marginTop="86pt"
+                        android:background="@drawable/bg_dash"
+                        android:layerType="software" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_customer_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="87pt">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:text="고객센터"
+                            android:textColor="@color/white"
+                            android:textSize="52pt" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125pt"
+                        android:layout_marginTop="75pt"
+                        android:layout_marginBottom="100dp">
+
+                        <ImageView
+                            android:layout_width="75pt"
+                            android:layout_height="75pt"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_menu_item" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54pt"
+                            android:fontFamily="@font/pretendard_regular"
+                            android:includeFontPadding="false"
+                            android:text="개인정보 및 보안"
+                            android:textColor="@color/white"
+                            android:textSize="52pt" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="bottom"
+                android:background="@drawable/my_blur_bg">
+
+                <ImageView
+                    android:id="@+id/iv_down_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_down_arrow_green" />
+            </FrameLayout>
+        </FrameLayout>
+    </net.csdn.roundview.RoundLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

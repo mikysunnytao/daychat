@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <com.daychat.live.widget.HeaderScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.daychat.live.widget.StickyLinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_yellow"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="380pt"
+                        android:layout_marginStart="55pt"
+                        android:layout_marginEnd="55pt"
+                        android:layout_marginBottom="40pt"
+                        app:banner_auto_loop="false"
+                        app:banner_indicator_gravity="center"
+                        app:banner_indicator_height="26pt"
+                        app:banner_indicator_margin="42pt"
+                        app:banner_indicator_marginBottom="56pt"
+                        app:banner_indicator_normal_color="#e8e8e8"
+                        app:banner_indicator_normal_width="26pt"
+                        app:banner_indicator_radius="13pt"
+                        app:banner_indicator_selected_color="@color/color_green"
+                        app:banner_indicator_selected_width="26pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:isSticky="true">
+
+                    <net.csdn.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="30pt"
+                        app:rTopRadius="75pt">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/scrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_menus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="95pt"
+                                    android:layout_marginTop="100pt"
+                                    android:layout_marginEnd="55pt"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30pt">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/pretendard_bold"
+                                        android:text="CHAT"
+                                        android:textColor="@color/black"
+                                        android:textSize="64pt" />
+
+                                    <ImageView
+                                        android:layout_width="80pt"
+                                        android:layout_height="80pt"
+                                        android:layout_gravity="end"
+                                        android:layout_marginEnd="95pt"
+                                        android:src="@mipmap/ic_more_dot"
+                                        android:visibility="gone" />
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_banner2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="95pt"
+                                    android:layout_marginTop="60pt"
+                                    android:layout_marginEnd="55pt"
+                                    app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_chat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="40pt"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                app:rRadius="60pt">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/my_chat" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="MY\nCHAT"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+
+                                            </net.csdn.roundview.RoundFrameLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="채팅"
+                                            android:textColor="@color/black"
+                                            android:textSize="42pt" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_group_chat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="40pt"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                app:rRadius="60pt">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/group_chat" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="GROUP\nCHAT"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+
+                                            </net.csdn.roundview.RoundFrameLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="모임광장"
+                                            android:textColor="@color/black"
+                                            android:textSize="42pt" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_tags"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="40pt"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                app:rRadius="@dimen/dp_15">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/genre_tag" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="GENRE\nTAG"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+                                            </net.csdn.roundview.RoundFrameLayout>
+
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="장르별"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30pt">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/pretendard_bold"
+                                        android:text="FUN"
+                                        android:textColor="@color/black"
+                                        android:textSize="64pt"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="80pt"
+                                        android:layout_height="80pt"
+                                        android:layout_gravity="end"
+                                        android:layout_marginEnd="95pt"
+                                        android:src="@mipmap/ic_more_dot"
+                                        android:visibility="gone" />
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_banner1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="95pt"
+                                    android:layout_marginTop="60pt"
+                                    android:layout_marginBottom="30pt"
+                                    android:layout_marginEnd="55pt">
+
+                                    <LinearLayout
+                                        android:id="@+id/short_video"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="40pt"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                app:rRadius="60pt">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/short_icon" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="SHORT"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+
+                                            </net.csdn.roundview.RoundFrameLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="SHORT"
+                                            android:textColor="@color/black"
+                                            android:textSize="42pt" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_video"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/dp_12"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_horizontal"
+                                                android:background="#e8e8e8"
+                                                app:rRadius="60pt">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/video_icon" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="VIDEO"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+
+                                            </net.csdn.roundview.RoundFrameLayout>
+
+
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="VIDEO"
+                                            android:textColor="@color/black"
+                                            android:textSize="42pt" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_picture"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="40pt"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <net.csdn.roundview.RoundFrameLayout
+                                                android:layout_width="340pt"
+                                                android:layout_height="wrap_content"
+                                                app:rRadius="60pt">
+
+                                                <ImageView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:adjustViewBounds="true"
+                                                    android:src="@mipmap/picture_icon" />
+
+                                                <net.csdn.roundview.RoundFrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#33000000"
+                                                    app:rRadius="60pt" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="@font/pretendard_bold"
+                                                    android:gravity="center"
+                                                    android:letterSpacing="0.1"
+                                                    android:text="PICTURE"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="42pt" />
+                                            </net.csdn.roundview.RoundFrameLayout>
+                                        </FrameLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_marginTop="45pt"
+                                            android:layout_marginBottom="40pt"
+                                            android:fontFamily="@font/pretendard_regular"
+                                            android:includeFontPadding="false"
+                                            android:letterSpacing="0.1"
+                                            android:text="PICTURE"
+                                            android:textColor="@color/color_333333"
+                                            android:textSize="42pt" />
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+                    </net.csdn.roundview.RoundLinearLayout>
+
+
+                </FrameLayout>
+            </com.daychat.live.widget.StickyLinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+    </com.daychat.live.widget.HeaderScrollView>
+</LinearLayout>

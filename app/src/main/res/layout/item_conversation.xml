@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.csdn.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="214pt"
+    android:layout_marginStart="55pt"
+    android:layout_marginEnd="55pt"
+    android:layout_marginBottom="15pt"
+    android:background="@color/white"
+    app:rRadius="50pt"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="40pt"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="36pt"
+            android:src="@mipmap/ic_red_dot"
+            android:layout_gravity="end"
+            android:layout_height="36pt"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="40pt"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/pretendard_semibold"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="골프 레벨업을 위한 모임"
+            android:textColor="#000000"
+            android:textSize="48pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27pt"
+            android:ellipsize="end"
+            android:fontFamily="@font/pretendard_semibold"
+            android:singleLine="true"
+            android:text="랠 시간괜찬으시면 골프치러 가요~!"
+            android:textColor="#919191"
+            android:textSize="38pt" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="54pt"
+        android:layout_height="68pt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="87pt"
+        android:src="@mipmap/favorite" />
+</net.csdn.roundview.RoundLinearLayout>

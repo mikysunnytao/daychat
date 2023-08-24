@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selectable_contact_item"
+    android:layout_width="match_parent"
+    android:layout_height="214pt"
+    android:focusable="true"
+    android:layout_marginBottom="15pt"
+    android:orientation="vertical">
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_marginStart="55pt"
+        android:background="@color/white"
+        app:rRadius="42pt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        >
+
+        <CheckBox
+            android:id="@+id/contact_check_box"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/contact_checkbox_selector"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="80pt"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <net.csdn.roundview.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="150pt"
+                android:layout_height="150pt"
+                android:layout_marginStart="40pt"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <View
+                android:id="@+id/user_status"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="1dp"
+                android:background="?attr/user_status_offline"
+                android:elevation="4dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginStart="40pt"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:singleLine="true"
+                    android:textColor="@color/black_font_color"
+                    android:letterSpacing="0.1"
+                    android:includeFontPadding="false"
+                    android:textSize="48pt"
+                    tools:text="" />
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:layout_marginTop="27pt"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="#919191"
+                    android:textSize="38pt"
+                    tools:text="오늘의 기분: 참좋아요!" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/btn_switch"
+                android:src="@drawable/switch_off"
+                android:layout_width="160pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="72pt"
+                android:layout_height="80pt"/>
+            <com.tencent.qcloud.tuicore.component.UnreadCountTextView
+                android:id="@+id/conversation_unread"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </net.csdn.roundview.RoundLinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="73.78dp"
+        android:background="@color/split_lint_color"
+        android:visibility="gone" />
+
+</RelativeLayout>

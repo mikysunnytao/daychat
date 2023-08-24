@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60pt"
+        android:background="#3ccf72"
+        android:orientation="vertical"
+        app:rTopRadius="80pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95pt"
+            android:layout_marginTop="80pt">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="MY CHATS"
+                android:textColor="@color/black"
+                android:textSize="64pt" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_create_group"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_marginEnd="50pt"
+                    android:src="@mipmap/ic_add" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_back_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back_nav"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_marginEnd="95pt"
+                    android:src="@mipmap/ic_arrow_down" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/rv_my_chats"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="80pt" />-->
+        <FrameLayout
+            android:id="@+id/fl_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="81pt" />
+
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </net.csdn.roundview.RoundLinearLayout>
+</LinearLayout>

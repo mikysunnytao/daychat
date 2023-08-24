@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="788pt"
+        android:layout_height="170.15pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sc9_a2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="35pt"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:fontFamily="@font/pretendard_regular"
+                android:hint="검색내용을 입력하세요."
+                android:includeFontPadding="false"
+                android:letterSpacing="0.1"
+                android:textColor="@color/white"
+                android:textColorHint="#8B8B8B"
+                android:textSize="50pt" />
+
+            <ImageView
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="60pt"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_search_yellow" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="138pt"
+        android:orientation="vertical"
+        android:background="@color/color_green"
+        app:rTopRadius="80pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95pt"
+            android:layout_marginTop="80pt">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="MY CHATS"
+                android:textSize="64pt" />
+
+            <ImageView
+                android:id="@+id/iv_back_nav"
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="50pt"
+                android:src="@mipmap/ic_arrow_down" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="95pt"
+                android:src="@mipmap/ic_circle_close" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="214pt">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recent_chat"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <net.csdn.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            app:rTopRadius="80pt"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="214pt">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="150pt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="95pt"
+                    android:layout_height="150pt"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="40pt"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="골프 레벨업을 위한 모임"
+                        android:textColor="@color/black"
+                        android:textSize="48pt"
+                        android:fontFamily="@font/pretendard_semibold"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20pt"
+                        android:layout_height="wrap_content">
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:drawableStart="@mipmap/ic_sharp"
+                            android:text="골프"
+                            android:textSize="32pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            app:rStrokeWidth="1pt"
+                            app:rStrokeColor="#707070"
+                            app:rRadius="29pt"
+                            android:drawablePadding="10pt"
+                            android:layout_height="58pt"/>
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:drawableStart="@mipmap/ic_location_small"
+                            android:text="인천골프장"
+                            android:textSize="32pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:layout_marginStart="10pt"
+                            app:rStrokeWidth="1pt"
+                            app:rStrokeColor="#707070"
+                            app:rRadius="29pt"
+                            android:drawablePadding="10pt"
+                            android:layout_height="58pt"/>
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:drawableStart="@mipmap/ic_personal"
+                            android:text="198명"
+                            android:textSize="32pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:layout_marginStart="10pt"
+                            app:rStrokeWidth="1pt"
+                            app:rStrokeColor="#707070"
+                            app:rRadius="29pt"
+                            android:drawablePadding="10pt"
+                            android:layout_height="58pt"/>
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:drawableStart="@mipmap/ic_settings"
+                            android:text="설정관리"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:textSize="32pt"
+                            android:background="#efea72"
+                            android:layout_marginStart="10pt"
+                            app:rRadius="29pt"
+                            android:drawablePadding="10pt"
+                            android:layout_height="58pt"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </net.csdn.roundview.RoundLinearLayout>
+
+
+    </net.csdn.roundview.RoundLinearLayout>
+
+</LinearLayout>

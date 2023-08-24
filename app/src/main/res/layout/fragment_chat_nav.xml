@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60pt"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:rTopRadius="80pt">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80pt">
+
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_marginStart="95pt"
+                    android:src="@mipmap/ic_circle_back" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pretendard_bold"
+                android:includeFontPadding="false"
+                android:text="장르별태그"
+                android:textColor="@color/black"
+                android:textSize="60pt" />
+
+            <FrameLayout
+                android:id="@+id/fl_chat_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/iv_tag_nav"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_marginEnd="95pt"
+                    android:src="@mipmap/ic_circle_more" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95pt"
+            android:layout_marginTop="80pt"
+            android:overScrollMode="never" />
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10pt"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            app:rTopRadius="80pt">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80pt">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:includeFontPadding="false"
+                    android:text="추천모임"
+                    android:textColor="@color/black"
+                    android:textSize="60pt" />
+
+                <ImageView
+                    android:id="@+id/iv_hot_nav"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="95pt"
+                    android:src="@mipmap/ic_circle_more" />
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80pt" />
+
+            <net.csdn.roundview.RoundLinearLayout
+                android:id="@+id/fl_my_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30pt"
+                android:background="#3ccf72"
+                android:orientation="vertical"
+                app:rTopRadius="80pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95pt"
+                    android:layout_marginTop="80pt">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="MY CHATS"
+                        android:textColor="@color/black"
+                        android:textSize="64pt" />
+
+                    <ImageView
+                        android:id="@+id/iv_show_my_chat"
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_marginEnd="50pt"
+                        android:src="@mipmap/ic_arrow_up" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_my_chat_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="80pt"
+                            android:layout_height="80pt"
+                            android:layout_marginEnd="95pt"
+                            android:src="@mipmap/ic_circle_close" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/fl_my_chats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80pt" />
+            </net.csdn.roundview.RoundLinearLayout>
+        </net.csdn.roundview.RoundLinearLayout>
+    </net.csdn.roundview.RoundLinearLayout>
+</LinearLayout>

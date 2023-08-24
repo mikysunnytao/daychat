@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30pt"
+        android:orientation="vertical"
+        android:background="@color/color_green"
+        app:rTopRadius="80pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95pt"
+            android:layout_marginTop="80pt">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="CHATTING"
+                android:textColor="@color/black"
+                android:textSize="64pt" />
+
+            <ImageView
+                android:id="@+id/iv_back_nav"
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="50pt"
+                android:src="@drawable/ic_arrow_down" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginEnd="95pt"
+                android:src="@drawable/ic_circle_close" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="80pt"
+            android:layout_height="150pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_recent_chat"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                    <View
+                        android:layout_width="1pt"
+                        android:layout_height="150pt"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30pt"
+                        android:background="@color/white" />
+                    <net.csdn.roundview.RoundFrameLayout
+                        android:layout_width="150pt"
+                        android:id="@+id/fl_setting"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30pt"
+                        android:background="@color/white"
+                        app:rRadius="75pt"
+                        android:layout_height="150pt">
+
+                        <ImageView
+                            android:id="@+id/iv_setting"
+                            android:layout_width="42.56pt"
+                            android:layout_height="42.56pt"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gear" />
+
+                    </net.csdn.roundview.RoundFrameLayout>
+                    <net.csdn.roundview.RoundFrameLayout
+                        android:id="@+id/fl_more"
+                        android:layout_width="185pt"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30pt"
+                        android:layout_marginEnd="95pt"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150pt"
+                            android:layout_height="150pt"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_circle_more" />
+                        <net.csdn.roundview.RoundTextView
+                            android:id="@+id/tv_unread_count"
+                            android:layout_width="70pt"
+                            app:rRadius="35pt"
+                            android:layout_gravity="end"
+                            android:text="0"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/white"
+                            android:textSize="33pt"
+                            android:fontFamily="@font/pretendard_semibold"
+                            android:gravity="center"
+                            android:background="#FF4622"
+                            android:layout_height="70pt"/>
+                    </net.csdn.roundview.RoundFrameLayout>
+                </LinearLayout>
+        </FrameLayout>
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60pt"
+            android:orientation="vertical"
+            android:background="@color/white"
+            app:rTopRadius="80pt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="214pt">
+
+                <net.csdn.roundview.CircleImageView
+                    android:layout_width="150pt"
+                    android:layout_height="150pt"
+                    android:id="@+id/iv_header"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="95pt" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40pt"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_chat_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/pretendard_semibold"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="48pt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20pt"
+                        android:orientation="horizontal">
+
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="58pt"
+                            android:drawableStart="@drawable/ic_sharp"
+                            android:drawablePadding="10pt"
+                            android:paddingLeft="30pt"
+                            android:gravity="center_vertical"
+                            android:paddingRight="30pt"
+                            android:text="골프"
+                            android:textSize="32pt"
+                            app:rRadius="29pt"
+                            app:rStrokeColor="#707070"
+                            app:rStrokeWidth="1pt" />
+
+                        <net.csdn.roundview.RoundTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="58pt"
+                            android:layout_marginStart="10pt"
+                            android:drawableStart="@drawable/ic_location_small"
+                            android:drawablePadding="10pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:text="인천골프장"
+                            android:textSize="32pt"
+                            android:gravity="center_vertical"
+                            app:rRadius="29pt"
+                            app:rStrokeColor="#707070"
+                            app:rStrokeWidth="1pt" />
+
+                        <net.csdn.roundview.RoundTextView
+                            android:id="@+id/tv_group_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58pt"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="10pt"
+                            android:drawableStart="@drawable/ic_personal"
+                            android:drawablePadding="10pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:text="198명"
+                            android:textSize="32pt"
+                            app:rRadius="29pt"
+                            app:rStrokeColor="#707070"
+                            app:rStrokeWidth="1pt" />
+
+                        <net.csdn.roundview.RoundTextView
+                            android:id="@+id/tv_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58pt"
+                            android:layout_marginStart="10pt"
+                            android:drawableStart="@drawable/ic_settings"
+                            android:drawablePadding="10pt"
+                            android:paddingLeft="30pt"
+                            android:paddingRight="30pt"
+                            android:text="설정관리"
+                            android:textSize="32pt"
+                            android:gravity="center_vertical"
+                            android:background="#efea72"
+                            app:rRadius="29pt"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </net.csdn.roundview.RoundLinearLayout>
+
+
+    </net.csdn.roundview.RoundLinearLayout>
+
+</LinearLayout>

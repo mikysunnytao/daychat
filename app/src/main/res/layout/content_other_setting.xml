@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_15">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="1  알림 및 소리 설정"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="-알림음 변경" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-어플 실행중 알림&amp; 사운드&amp;진동" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-답장 메시지 알림" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-그룹 톡 멘션 알림" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="2  디스플레이 설정"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="-어두운 또는 밝은 모드 선택" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-텍스트 설정" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-글꼴 변경" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-글자 크기" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-테마 선택" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="3  음성통화 및 영상통화 설정"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="-저 데이터 모드 (영상, 음질 저품질사용)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-통화녹음 설정" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="-수신, 발신 알림음설정" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1pt"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="#eeeeee" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

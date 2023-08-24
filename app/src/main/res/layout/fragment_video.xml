@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95pt"
+        android:layout_marginTop="218pt"
+        android:layout_marginEnd="95pt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/pretendard_bold"
+            android:includeFontPadding="false"
+            android:text="DayCHAT"
+            android:textColor="#989898"
+            android:textSize="64pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#989898"
+            android:text="®"
+            android:layout_marginTop="50pt"
+            android:textSize="18pt" />
+
+        <View
+            android:layout_width="4pt"
+            android:layout_height="45pt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="35pt"
+            android:background="#4e4e4e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="34pt"
+            android:layout_weight="1"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="VIDEO"
+            android:textColor="@color/white"
+            android:textSize="64pt" />
+
+        <ImageView
+            android:id="@+id/iv_hide"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_marginEnd="50pt"
+            android:src="@mipmap/ic_arrow_down" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:src="@mipmap/ic_circle_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95pt"
+        android:layout_marginTop="80pt">
+
+        <ImageView
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_log_white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42pt"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="44pt"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_videos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,482 @@
+<resources>
+    <string name="app_name">DayCHAT</string>
+    <string name="st_second">%s 秒</string>
+    <string name="st_minutes">%s 分</string>
+    <string name="st_terms_of_use_and_privacy_policy">《美音直播用户协议》</string>
+    <string name="st_read_and_agree">注册或登录代表您同意</string>
+    <string name="st_wechat">微信</string>
+    <string name="divide_long_press_tip">长按缩略图排序"</string>
+    <string name="divide_add_video">添加视频"</string>
+    <string name="title_trim">视频剪辑</string>
+    <string name="transition_maker_edit">编辑"</string>
+    <string name="in_process">正在处理...</string>
+    <string name="transition_maker_confirm">确定"</string>
+    <string name="title_compose">视频拼接</string>
+    <string name="divide_add_transition">添加过场字幕"</string>
+    <string name="title_transition_make">过场字幕</string>
+    <string name="title_transcode">视频转码</string>
+    <string name="title_multiple_compose">图片视频混排</string>
+    <string name="st_mobile">手机</string>
+    <string name="title_import_and_edit">素材导入编辑</string>
+    <string name="title_video_divide">视频分割</string>
+    <string name="divide_add_tip">剪一段"</string>
+    <string name="st_mobile_login">手机号登录</string>
+    <string name="divide_delete_tip">双击片段可以删除"</string>
+    <string name="divide_compose">视频合成"</string>
+    <string name="st_forget_password">忘记密码</string>
+    <string name="st_input_phone_number">请输入11位手机号</string>
+    <string name="st_input_verification_code">请输入验证码</string>
+    <string name="st_input_password">请输入密码</string>
+    <string name="st_send_code">获取验证码</string>
+    <string name="st_regedit_now">立即注册</string>
+    <string name="live_guard">守护</string>
+    <string name="st_ok">确定</string>
+    <string name="st_cancel">取消</string>
+    <string name="st_share">分享</string>
+    <string name="dlg_save_draft_yes">保存</string>
+    <string name="toast_draft_save_success">草稿保存成功</string>
+    <string name="toast_draft_save_fail">草稿保存失败</string>
+    <string name="st_close">关闭</string>
+    <string name="if_edit_video">是否编辑视频</string>
+    <string name="dlg_yes">是</string>
+    <string name="dlg_no">否</string>
+    <string name="toast_draft_recover_success">草稿恢复成功</string>
+    <string name="toast_draft_recover_fail">草稿恢复失败</string>
+    <string name="dlg_save_draft_title">输入草稿标题</string>
+    <string name="speed_super_slow">极慢"</string>
+    <string name="speed_slow">慢"</string>
+    <string name="speed_normal">正常"</string>
+    <string name="speed_fast">快"</string>
+    <string name="speed_super_fast">极快"</string>
+    <string name="speed_range">分段变速</string>
+    <array name="menu_icons">
+        <item>R.mipmap.ic_message</item>
+    </array>
+
+    <string name="upload">上传</string>
+    <string name="cancel_upload">取消上传</string>
+
+    <item name="selector_view" type="id"></item>
+    <item name="rect_view" type="id"></item>
+    <string name="desc_paint_clear">清除</string>
+    <string name="desc_paint_size">画笔大小</string>
+    <string name="desc_paint_color">画笔颜色</string>
+    <string name="desc_image_tip">请选择所需的贴图！</string>
+
+    <string name="desc_paint_undo">撤销</string>
+
+    <string name="account">Username</string>
+    <string name="password">Password</string>
+
+    <string name="demo_login_country_or_region_label">Country/Region</string>
+    <string name="demo_area_code_title">Select a country or region</string>
+    <string name="demo_language_title">Language</string>
+    <string name="demo_style_title">Style</string>
+    <string name="demo_login_chinese_mainland">Chinese Mainland</string>
+    <string name="demo_login_mobile_phone_number">Phone Number</string>
+    <string name="demo_login_verification_code_label">Verification Code</string>
+    <string name="demo_search">Search</string>
+
+
+    <string name="login_title">Tencent Cloud IM</string>
+    <string name="login_sub_title">Welcome to use this APP to experience Tencent Cloud IM products and services</string>
+    <string name="input_number">Enter mobile number</string>
+    <string name="input_verification">Enter SMS verification code</string>
+    <string name="verification_code">Send Code</string>
+    <string name="button_login">Log In</string>
+    <string name="password_login">Log in via password</string>
+    <string name="official_website">Visit Us</string>
+    <string name="debug_mode_summary">IM login screen that is only visible in debug mode.</string>
+    <string name="account_hint">Use any non-empty character. Refer to the class comments.</string>
+
+    <string name="repeat_login_tip">Your account has been logged in on another device.</string>
+    <string name="expired_login_tip">Account expired. Log in again.</string>
+    <string name="failed_login_tip">Login failed</string>
+
+    // "我"相关
+    <string name="profile">Me</string>
+    <string name="modify_user_icon">Profile Photo</string>
+    <string name="modify_nick_name">Name</string>
+    <string name="modify_signature">Status</string>
+    <string name="modify_account">Account</string>
+    <string name="add_rule">Friend Request</string>
+    <string name="allow_type_allow_any">Allow any user to add you as friend</string>
+    <string name="allow_type_deny_any">Decline friend request from any user</string>
+    <string name="allow_type_need_confirm">Anyone upon Request</string>
+    <string name="exit">Log Out</string>
+    <string name="about_im">About Tencent Cloud·IM</string>
+    <string name="modify_birthday">Birthday</string>
+    <string name="modify_gender">Gender</string>
+    <string name="cancel_account">Cancel Account</string>
+    <string name="cancel_account_alert_tip">Are you sure you want to cancel this account?</string>
+    <string name="cancel_account_tip">After canceling this account, you will be unable to use it, and related data will be permanently deleted. Current account: %s</string>
+    <string name="cancel_account_error_msg">Cancellation failed. No token or mobile number associated with the current account is detected. Please log in with your mobile number.</string>
+    <string name="cancel_account_successful">Canceled</string>
+    <string name="self_infomation_collection_list">Personal Information Collected</string>
+    <string name="third_part_shared_list">Information Shared with Third Parties</string>
+
+    <string name="modify_theme">Theme</string>
+    <string name="light_theme">Light</string>
+    <string name="lively_theme">Lively</string>
+    <string name="serious_theme">Solemn</string>
+    <string name="modify_language">Language</string>
+    <string name="modify_style">Style</string>
+    <string name="style_classic">Classic</string>
+    <string name="style_minimalist">Minimalist</string>
+
+    <string name="demo_language">English</string>
+    <string name="demo_theme_light">light</string>
+
+    <string name="demo_signature_tag">Status : </string>
+    <string name="demo_account_tag">ID : </string>
+
+    <string name="demo_about_sdk_version">SDK Version</string>
+    <string name="demo_about_im">About</string>
+    <string name="demo_contact_us">Contact us</string>
+
+    <string name="demo_self_detail_gender_male">Male</string>
+    <string name="demo_self_detail_gender_female">Female</string>
+    <string name="demo_self_detail_gender_unknown">Unknown</string>
+
+    <string name="demo_self_detail_modify_nickname">Name</string>
+    <string name="demo_self_detail_modify_signature">Status</string>
+    <string name="demo_no_status">No status</string>
+    <string name="demo_profile_user_id">User ID</string>
+
+    <string name="demo_self_detail_modify_gender">Gender</string>
+    <string name="demo_profile_edit">Edit</string>
+
+    <string name="demo_self_detail_modify_nickname_rule">Only letters, digits, underscores, and Chinese characters.</string>
+
+    // 主页Tab相关
+    <string name="tab_contact_tab_text">Contacts</string>
+    <string name="tab_conversation_tab_text">Message</string>
+    <string name="demo_tab_overseas_conversation_tab_text">Chats</string>
+    <string name="tab_profile_tab_text">Me</string>
+    <string name="minimalist_tab_settings_tab_text">Settings</string>
+    <string name="minimalist_tab_contacts_tab_text">Contacts</string>
+    <string name="tab_community_tab_text">Community</string>
+
+
+    <string name="conversation_title">Dayday</string>
+    <string name="group_chat_title">Group Chat</string>
+    <string name="contact_title">Contacts</string>
+    <string name="add_friend">Add Contact</string>
+    <string name="add_group">Add Group</string>
+    <string name="start_conversation">New Chat</string>
+    <string name="join_group">Join Group</string>
+    <string name="search_group">Search</string>
+    <string name="create_group_chat">Create Group Chat</string>
+    <string name="create_chat_room">Create Chat Room</string>
+    <string name="create_community">Create Community</string>
+    <string name="create_private_group">Create Discussion Group</string>
+
+
+    <string name="test_excluded_from_unread_count_action">Message excluded from unread count</string>
+
+    <string name="privacy_text">Agreed to <a href="http://privacy.qq.com/">Privacy Policy</a></string>
+
+    <string name="no_support_msg">Unsupported custom messages</string>
+    <string name="live">\'s live stream</string>
+    <string name="living">In Progress</string>
+    <string name="stop_live">End Live Stream</string>
+    <string name="http_error_invalid">Username must begin with a letter and should be a combination of 3-23 letters and numbers.</string>
+    <string name="http_error_user">User already exists.</string>
+    <string name="http_error_server">Server error</string>
+    <string name="http_error_no_user">User does not exist.</string>
+    <string name="http_error_password">Incorrect password</string>
+    <string name="not_retry_more">Do not send too many verification codes.</string>
+    <string name="input_phone">Enter valid mobile number</string>
+    <string name="verify_code_fail">Failed to get verification code:</string>
+    <string name="send_verify_code">Verification code sent</string>
+    <string name="input_phone_code">Enter the mobile number and verification code</string>
+    <string name="login_fail_tip">Login failed:</string>
+    <string name="login_suc_tip">Login successful</string>
+    <string name="second">s</string>
+    <string name="get_verify_code">Send Code</string>
+    <string name="permission_tip">Not fully authorized. Some features may not be available.</string>
+
+    <string name="logout_tip">Log out now?</string>
+
+    <string name="online_fail">Network request failed</string>
+    <string name="online">Online</string>
+    <string name="unknow_error">Unknown error</string>
+    <string name="you_app">Your App</string>
+    <string name="low_version"> The version is too low. Unable to open the offline message.</string>
+    <string name="call_timeout">Call timed out</string>
+    <string name="call_notification">Voice/Video Call Notifications</string>
+    <string name="background_tip">When the program is running in the background, new incoming call notifications will be displayed in the Notifications bar.</string>
+    <string name="new_msg_notification">New Messages</string>
+    <string name="new_msg">You\'ve received a new message.</string>
+    <string name="call_nos">No response</string>
+    <string name="login_password_tips">1~16 characters(letters+numbers)</string>
+    <string name="login_user_tips">Letters start, 4~24 characters(letters+numbers)</string>
+
+    <string name="login_agree_privacy_regulations">\"Privacy Policy\"</string>
+    <string name="login_agree_privacy_regulations_summary">\"Summary of Privacy Policy"\</string>
+    <string name="login_agree_user_agreement">\"User Agreement\"</string>
+    <string name="login_agree_self_infomation_collection_list">\"Personal Information Collected\"</string>
+    <string name="login_agree_third_part_shared_list">\"Information Shared with Third Parties\"</string>
+    <string name="im_privacy">Privacy Policy</string>
+    <string name="im_statement">Disclaimer</string>
+    <string name="im_user_agreement">User Agreement</string>
+
+    <string name="im_statement_content">Tencent Cloud Instant Messaging APP  (\"this product\") is a test product provided by Tencent Cloud, and Tencent Cloud enjoys the copyright and ownership of this product. This product is only used for functional experience and must not be used for any commercial purposes. In order to comply with the regulatory requirements of relevant departments, any pornography, abusive, violent, and politically related content is strictly prohibited during use.</string>
+    <string name="im_privacy_tips">Read and agree to the agreement first</string>
+    <string name="demo_im_privacy_dialog_tips">Welcome to Tencent Cloud Instant Messaging. To protect your personal information, we have updated the \"Privacy Policy\", involving improving the specific contents and purposes of collecting user information, and adding third-party SDKs.\n\n Please carefully read the \"User Agreement\",\"Summary of Privacy Policy\",\"Privacy Policy\",\"Personal Information Collected\" and \"Information Shared with Third Parties\", and tap Agree and Continue to use our products and services if you agree to them.</string>
+    <string name="demo_im_privacy_agree">Agree and Continue</string>
+    <string name="demo_im_privacy_refuse_and_exit">Disagree and Exit</string>
+
+    <string name="get_verify_code_error">An error occurred while getting the verification code. Refresh and try again. (%d)</string>
+
+    <string name="modify_group_name">Edit Group Name</string>
+    <string name="input_tip">No nickname. Enter again.</string>
+    <string name="call_time_out">time out</string>
+
+    <string name="mark_all_message_as_read_succ">Cleared unread messages successfully</string>
+    <string name="mark_all_message_as_read_err_format">Failed to clear unread messages. %d, %s</string>
+
+    <string name="demo_profile_detail">Details</string>
+    <string name="demo_profile_back">Back</string>
+
+    <string name="demo_message_read_switch_title">Message read status</string>
+    <string name="demo_message_read_switch_open_tip">This feature is the flagship version feature</string>
+    <string name="demo_message_read_switch_open_text">If disabled, the message read status is hidden for all your messages and for all the messages sent by members in a chat.</string>
+    <string name="demo_message_read_switch_close_text">If enabled, the message read status is displayed for all your messages and for all the messages sent by members in a chat.</string>
+
+    <string name="demo_choose_avatar">Choose Avatar</string>
+
+    <string name="demo_permission_mic_reason_title">%s applies for access to the microphone</string>
+    <string name="demo_permission_mic_reason">In order for you to send voice messages, make video and audio and video calls, please allow us to access the microphone.</string>
+    <string name="demo_permission_camera_reason_title">%s applies for camera permission</string>
+    <string name="demo_permission_camera_reason">In order for you to take photos or videos to send to friends, and to make video calls, please allow us to access the webcam.</string>
+    <string name="demo_permission_storage_reason_title">%s applies for storage permission</string>
+    <string name="demo_permission_storage_reason">In order for you to save photos and videos to your device, please allow us to write photos and videos to your device.</string>
+    <string name="demo_permission_mic_dialog_alert">Allow microphone access in Settings->Apps->%s to use voice messages, video cameras, and audio and video calls as normal</string>
+    <string name="demo_permission_camera_dialog_alert">Allow camera access in Settings->Apps->%s to use the photo, video and video calling functions as normal</string>
+    <string name="demo_permission_storage_dialog_alert">Allow storage access in Settings->Apps->%s to use the function of saving photos and videos normally</string>
+
+    <string name="upgrade_sure">Upgrade</string>
+    <string name="demo_user_status_switch_title">Show online status</string>
+    <string name="demo_user_status_switch_on_text">After it is turned off, you will not be able to see friends\' online or offline status prompts in the conversation list and address book.</string>
+    <string name="demo_user_status_switch_off_text">After it is turned on, you will be able to see your friends\' online or offline status prompts in the conversation list and address book.</string>
+    <string name="demo_user_status">Online Status</string>
+    <string name="demo_i_know">I got it</string>
+    <string name="demo_no_more_reminders">No more reminders</string>
+    <string name="demo_im_flagship">Ultimate Edition</string>
+    <string name="demo_buying_guidelines">price description</string>
+    <string name="demo_im_flagship_edition_update_tip">%s function is the IM Ultimate Edition function, which can be used after purchasing the Ultimate Edition package. Please refer to the price description for details.</string>
+    <string name="demo_buying_tips">This is the feature of ultimate edition</string>
+
+    <string name="chat_security_warning">[Security Reminder] This App is only used to experience the features of Tencent Cloud IM products, and cannot be used for business negotiation and expansion. Please do not trust remittance, winning the lottery and other information related to money, do not easily make strange phone calls, beware of being deceived.</string>
+    <string name="chat_security_warning_report">Report</string>
+    <string name="st_home_page">首页</string>
+    <string name="st_home_short">短视频</string>
+    <string name="st_home_moment">动态</string>
+    <string name="st_home_mine">我的</string>
+
+    <string name="st_gold">金币</string>
+    <string name="st_unlock_gold">%s 金币</string>
+
+    <string name="st_ten_thousand">%s 万</string>
+    <string name="st_nothing">暂无数据</string>
+
+    <string name="st_pk_time">倒计时 %s</string>
+    <string name="st_punish_time">惩罚中 %s</string>
+    <string name="st_publish_waring">尊敬的用户，您发布的内容须遵守相关法律法规和平台规则,请严格遵守相关规定，以免违规。</string>
+
+    <string name="st_publish_moment_tips_1">记录生活，拥抱美好...</string>
+    <string name="st_publish_moment_tips_2">参与话题，让更多人看到</string>
+    <string name="st_publish_moment_price">设置付费动态价格</string>
+
+    <string name="st_topic">话题</string>
+    <string name="st_pulish_moment">发动态</string>
+    <string name="st_pulish">发布</string>
+
+    <string name="st_live_title">直播标题</string>
+    <string name="st_live_push_title">给直播写个标题吧</string>
+    <string name="st_category">频道</string>
+    <string name="st_start_live">开始直播</string>
+
+
+    <string name="st_normal_room">普通房间</string>
+    <string name="st_price_room">付费房间</string>
+    <string name="st_password_room">私密房间</string>
+
+    <string name="st_login_out">登录超时,请重新登录</string>
+    <string name="st_upload_error">上传失败,请稍后再试</string>
+    <string name="st_error">错误</string>
+    <string name="st_select_thumb">请选择封面</string>
+    <string name="st_select_category">请选址直播频道</string>
+    <string name="st_input_live_title">请输入标题</string>
+
+    <string name="st_input_live_price">请输入收费金额</string>
+    <string name="st_input_price_tips">设置付费金额</string>
+
+
+    <string name="st_input_live_password">请输入直播密码</string>
+    <string name="st_input_value">请输入内容</string>
+
+
+    <string name="Dermabrasion">磨皮</string>
+    <string name="White">美白</string>
+    <string name="Ruddy">红润</string>
+    <string name="Face">美颜</string>
+    <string name="Filter">滤镜</string>
+
+    <string name="st_live_rank_text">贡献榜</string>
+    <string name="st_live_rank">贡献榜 %s</string>
+    <string name="st_live_ban_text">禁言列表</string>
+    <string name="st_live_ban">禁言</string>
+    <string name="st_live_guard">守护 %s</string>
+    <string name="st_live_guard_nums">守护 %s人</string>
+    <string name="st_live_buy_guard">开通守护</string>
+    <string name="st_live_watcher">%s人观看</string>
+    <string name="st_live_income_diamond_anchor">本场收入钻石</string>
+    <string name="st_live_income_diamond">收入钻石</string>
+    <string name="st_live_start_error">开播失败</string>
+    <string name="live_gift_send_lian_3">连送 x</string>
+    <string name="live_gift_send_lian">连送</string>
+    <string name="live_gift_send_lian_2">x</string>
+
+    <string name="st_post_a_comment">说点什么~</string>
+    <string name="st_post_a_moment_comment">发布评论</string>
+    <string name="st_post">发送</string>
+    <string name="st_gift">礼物</string>
+    <string name="st_send_gift">赠送</string>
+    <string name="st_send_gift_2">送了</string>
+    <string name="st_gift_charge">充值 ></string>
+    <string name="st_gift_tips_1">请选择礼物</string>
+    <string name="st_gift_tips_2">金币不足,请前往充值</string>
+    <string name="st_follow">关注</string>
+    <string name="st_followed">已关注</string>
+    <string name="st_im">私信</string>
+    <string name="st_home">主页</string>
+
+
+    <string name="st_new_comment">最新评论 (%s)</string>
+    <string name="st_comment_repaly_num">%s 条回复</string>
+    <string name="st_mine_id">ID：%s</string>
+    <string name="st_login_regedit">登录 / 注册</string>
+
+
+    <string name="st_fans">粉丝</string>
+    <string name="st_fans_count">粉丝: %s</string>
+    <string name="st_vister">访客</string>
+
+    <string name="st_mine_wallect">我的钱包</string>
+    <string name="st_mine_vip">贵族中心</string>
+    <string name="st_mine_level">用户等级</string>
+    <string name="st_mine_shop">直播小店</string>
+    <string name="st_mine_moment">我的动态</string>
+    <string name="st_mine_tiktok">我的短视频</string>
+    <string name="st_mine_collect">我的收藏</string>
+    <string name="st_mine_rank">亲密榜</string>
+    <string name="st_mine_identification">认证主播</string>
+    <string name="st_mine_room_manager">房间管理</string>
+    <string name="st_mine_invite">邀请好友</string>
+    <string name="st_mine_incoming">收益记录</string>
+    <string name="st_mine_guild">主播公会</string>
+    <string name="st_mine_business">商务合作</string>
+    <string name="st_mine_setting">设置</string>
+
+    <string name="st_vip_1">游侠</string>
+    <string name="st_vip_2">骑士</string>
+    <string name="st_vip_3">公爵</string>
+    <string name="st_vip_4">国王</string>
+    <string name="st_vip_enter_room">进入直播间</string>
+    <string name="st_live_hot">热度: %s</string>
+    <string name="st_in">在</string>
+    <string name="st_streamer_room">的直播间</string>
+    <string name="st_streamer_send_a">送出一个</string>
+
+
+    <string name="st_shop_item_list">商品列表</string>
+
+    <string name="st_link_on">开启连麦</string>
+    <string name="st_link_off">关闭连麦</string>
+
+    <string name="st_anchor_link_on">主播开启了连麦</string>
+    <string name="st_anchor_link_off">主播关闭了连麦</string>
+
+    <string name="st_start_pk">发起PK</string>
+    <string name="st_room_setting">房间管理</string>
+
+
+    <string name="st_pk_searching">匹配中</string>
+    <string name="st_pk_end">结束PK</string>
+    <string name="st_pk_is_running">您已经在PK中</string>
+
+    <string name="st_link_tips1">向你发出一个连麦请求</string>
+
+    <string name="st_accept">接受</string>
+    <string name="st_dialog_tips1">了解贵族特权  ></string>
+
+    <string name="st_set_manager">设置房管</string>
+    <string name="st_cancel_manager">取消房管</string>
+    <string name="st_success">成功</string>
+    <string name="st_publish_success">发布成功</string>
+    <string name="st_manager_list">管理员列表</string>
+    <string name="st_ban_list">禁言列表</string>
+    <string name="st_live_rank_list">贡献榜</string>
+
+
+    <string name="st_live_guardian_intimacy">贡献%s金币</string>
+
+    <string name="st_live_guardian_type_1">年守护</string>
+    <string name="st_live_guardian_type_tips_1">独享踢人、禁言尊贵特权</string>
+
+    <string name="st_live_guardian_type_2">月守护</string>
+    <string name="st_live_guardian_type_tips_2">专属礼物享2倍经验特权</string>
+
+    <string name="st_live_guardian_type_3">7日守护</string>
+    <string name="st_live_guardian_type_tips_3">送出指定礼物则自动开通7日守护</string>
+
+    <string name="st_open">开通</string>
+    <string name="st_open_9off">续费(9折)</string>
+    <string name="st_over_time">%s 到期</string>
+    <string name="st_live_guardian_type_info_title_1">专属身份标识</string>
+    <string name="st_live_guardian_type_info_1">成为守护后，在主播直播间麦序、公聊区域、真爱团中展示特殊身份标识</string>
+    <string name="st_live_guardian_type_info_2">成为守护后，进入主播直播间拥有进场弹幕和欢迎语</string>
+
+    <string name="st_live_guardian_type_info_title_2">专属礼物</string>
+    <string name="st_live_guardian_type_info_3">开通守护后享有专属守护礼物使用权</string>
+
+    <string name="st_live_guardian_type_info_title_3">尊贵特权</string>
+    <string name="st_live_guardian_type_info_4">年守护拥有直播间踢人/禁言权限</string>
+
+    <string name="st_tips">提醒</string>
+    <string name="st_tips_gold_is_low_1">您的金币不足</string>
+    <string name="st_go_pay_gold">立即充值</string>
+
+    <string name="st_my_gold">我的金币: %s</string>
+    <string name="st_go_charge">充值 ></string>
+    <string name="st_search_topic_tips">#话题搜索</string>
+    <string name="st_hot_topic">热门话题</string>
+
+    <string name="st_topic_list_title">#%s#</string>
+    <string name="st_topic_list_num">%s人讨论</string>
+
+
+    <string name="my_page">MY PAGE</string>
+    <string name="my_wallet">WALLET</string>
+    <string name="my_message">MESSAGE</string>
+
+
+
+
+
+    <string name="facebook_app_id">596535289288763</string>
+    <string name="fb_login_protocol_scheme">fb596535289288763</string>
+    <string name="facebook_client_token">5eaee64be81278e1eaa3a59a697c6686</string>
+
+
+
+    <string name="tc_ugc_video_list_adapter_video_state_normal">已审核</string>
+    <string name="tc_ugc_video_list_adapter_video_state_in_audit">审核中</string>
+    <string name="tc_ugc_video_list_adapter_video_state_pornographic">涉黄</string>
+    <string name="tc_vod_player_activity_download_video_is_downloading">正在下载...</string>
+    <string name="tc_vod_player_activity_download_video_download_failed">下载失败</string>
+    <string name="google_server_client_id">142126616100-9t5mig5c9pkcjqa75mbln5r59f2ntbpu.apps.googleusercontent.com</string>
+
+</resources>

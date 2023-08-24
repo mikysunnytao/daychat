@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="855pt"
+        android:layout_height="120pt"
+        android:background="@mipmap/ic_search_bg_black"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="center_vertical"
+        android:hint="검색내용을 입력하세요."
+        android:includeFontPadding="false"
+        android:paddingStart="50pt"
+        android:textColor="#8B8B8B"
+        android:textColorHint="#8B8B8B"
+        android:textSize="50pt" />
+</FrameLayout>

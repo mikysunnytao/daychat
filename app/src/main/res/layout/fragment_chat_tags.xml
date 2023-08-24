@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header"/>
+    <net.csdn.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60pt"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:rTopRadius="80pt">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80pt">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_marginStart="95pt"
+                android:src="@mipmap/ic_circle_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pretendard_bold"
+                android:includeFontPadding="false"
+                android:text="장르별태그"
+                android:letterSpacing="0.1"
+                android:textColor="@color/black"
+                android:textSize="60pt" />
+
+            <ImageView
+
+                android:layout_width="80pt"
+                android:layout_height="80pt"
+                android:layout_gravity="end"
+                android:layout_marginEnd="95pt"
+                android:src="@mipmap/ic_circle_more" />
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="80pt"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95pt"
+                    android:overScrollMode="never" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60pt">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:includeFontPadding="false"
+                        android:text="운동"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="60pt" />
+
+                    <ImageView
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_gravity="end"
+                        android:visibility="gone"
+                        android:layout_marginEnd="95pt"
+                        android:src="@mipmap/ic_circle_more" />
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_training"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95pt"
+                    android:layout_marginTop="80pt"
+                    android:overScrollMode="never" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60pt">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:includeFontPadding="false"
+                        android:text="여행"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="60pt" />
+
+                    <ImageView
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="95pt"
+                        android:visibility="gone"
+                        android:src="@mipmap/ic_circle_more" />
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95pt"
+                    android:layout_marginTop="80pt"
+                    android:overScrollMode="never" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60pt">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:includeFontPadding="false"
+                        android:text="취미"
+                        android:letterSpacing="0.1"
+                        android:textColor="@color/black"
+                        android:textSize="60pt" />
+
+                    <ImageView
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_gravity="end"
+                        android:visibility="gone"
+                        android:layout_marginEnd="95pt"
+                        android:src="@mipmap/ic_circle_more" />
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95pt"
+                    android:layout_marginTop="80pt"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </net.csdn.roundview.RoundLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+com/tencent/xmagic/utils/UriUtils.java
+ com.tencent.xmagic.utils.UriUtils
+com/tencent/xmagic/download/FileUtil.java
+ com.tencent.xmagic.download.FileUtil
+com/tencent/xmagic/widget/diaolog/ProgressDialog.java
+ com.tencent.xmagic.widget.diaolog.ProgressDialog
+com/tencent/xmagic/download/DownloadErrorCode.java
+ com.tencent.xmagic.download.DownloadErrorCode
+com/tencent/xmagic/panel/adapter/XmagicPanelAdapter.java
+ com.tencent.xmagic.panel.adapter.XmagicPanelAdapter
+ com.tencent.xmagic.panel.adapter.XmagicPanelAdapter$1
+ com.tencent.xmagic.panel.adapter.XmagicPanelAdapter$PropertyHolder
+ com.tencent.xmagic.panel.adapter.XmagicPanelAdapter$XmagicPanelItemClickListener
+com/tencent/xmagic/module/XmagicUIProperty.java
+ com.tencent.xmagic.module.XmagicUIProperty
+ com.tencent.xmagic.module.XmagicUIProperty$1
+ com.tencent.xmagic.module.XmagicUIProperty$UICategory
+com/tencent/xmagic/widget/XmagicSeekBar.java
+ com.tencent.xmagic.widget.XmagicSeekBar
+ com.tencent.xmagic.widget.XmagicSeekBar$1
+com/tencent/xmagic/download/ResDownloadUtil.java
+ com.tencent.xmagic.download.ResDownloadUtil
+ com.tencent.xmagic.download.ResDownloadUtil$1
+ com.tencent.xmagic.download.ResDownloadUtil$2
+ com.tencent.xmagic.download.ResDownloadUtil$3
+ com.tencent.xmagic.download.ResDownloadUtil$4
+com/tencent/xmagic/widget/XmagicSeekBarLayout.java
+ com.tencent.xmagic.widget.XmagicSeekBarLayout
+ com.tencent.xmagic.widget.XmagicSeekBarLayout$1
+ com.tencent.xmagic.widget.XmagicSeekBarLayout$OnSeekBarChangeListener
+com/tencent/xmagic/panel/XmagicPanelDataManager.java
+ com.tencent.xmagic.panel.XmagicPanelDataManager
+ com.tencent.xmagic.panel.XmagicPanelDataManager$1
+ com.tencent.xmagic.panel.XmagicPanelDataManager$ClassHolder
+com/tencent/xmagic/download/ResDownloadConfig.java
+ com.tencent.xmagic.download.ResDownloadConfig
+com/tencent/xmagic/config/MotionDLUtils.java
+ com.tencent.xmagic.config.MotionDLUtils
+ com.tencent.xmagic.config.MotionDLUtils$1
+ com.tencent.xmagic.config.MotionDLUtils$MotionModel
+com/tencent/xmagic/XMagicImpl.java
+ com.tencent.xmagic.XMagicImpl
+ com.tencent.xmagic.XMagicImpl$1
+ com.tencent.xmagic.XMagicImpl$1$1
+ com.tencent.xmagic.XMagicImpl$2
+ com.tencent.xmagic.XMagicImpl$2$1
+ com.tencent.xmagic.XMagicImpl$3
+ com.tencent.xmagic.XMagicImpl$XmagicState
+com/tencent/xmagic/module/XmagicResParser.java
+ com.tencent.xmagic.module.XmagicResParser
+ com.tencent.xmagic.module.XmagicResParser$1
+ com.tencent.xmagic.module.XmagicResParser$LutData
+com/tencent/xmagic/MotionsDownloader.java
+ com.tencent.xmagic.MotionsDownloader
+ com.tencent.xmagic.MotionsDownloader$1
+ com.tencent.xmagic.MotionsDownloader$MotionsDownLoadCallBack
+com/tencent/xmagic/widget/XmagicToast.java
+ com.tencent.xmagic.widget.XmagicToast
+ com.tencent.xmagic.widget.XmagicToast$1
+ com.tencent.xmagic.widget.XmagicToast$2
+ com.tencent.xmagic.widget.XmagicToast$3
+com/tencent/xmagic/widget/diaolog/TipDialog.java
+ com.tencent.xmagic.widget.diaolog.TipDialog
+ com.tencent.xmagic.widget.diaolog.TipDialog$1
+ com.tencent.xmagic.widget.diaolog.TipDialog$2
+ com.tencent.xmagic.widget.diaolog.TipDialog$TipDialogClickListener
+com/tencent/xmagic/utils/OnDownloadListener.java
+ com.tencent.xmagic.utils.OnDownloadListener
+com/tencent/xmagic/panel/XmagicPanelView.java
+ com.tencent.xmagic.panel.XmagicPanelView
+ com.tencent.xmagic.panel.XmagicPanelView$1
+ com.tencent.xmagic.panel.XmagicPanelView$10
+ com.tencent.xmagic.panel.XmagicPanelView$10$1
+ com.tencent.xmagic.panel.XmagicPanelView$10$2
+ com.tencent.xmagic.panel.XmagicPanelView$10$3
+ com.tencent.xmagic.panel.XmagicPanelView$2
+ com.tencent.xmagic.panel.XmagicPanelView$3
+ com.tencent.xmagic.panel.XmagicPanelView$4
+ com.tencent.xmagic.panel.XmagicPanelView$4$1
+ com.tencent.xmagic.panel.XmagicPanelView$5
+ com.tencent.xmagic.panel.XmagicPanelView$5$1
+ com.tencent.xmagic.panel.XmagicPanelView$6
+ com.tencent.xmagic.panel.XmagicPanelView$6$1
+ com.tencent.xmagic.panel.XmagicPanelView$7
+ com.tencent.xmagic.panel.XmagicPanelView$8
+ com.tencent.xmagic.panel.XmagicPanelView$9
+ com.tencent.xmagic.panel.XmagicPanelView$CheckedListener
+ com.tencent.xmagic.panel.XmagicPanelView$PanelMenu
+ com.tencent.xmagic.panel.XmagicPanelView$PanelViewCallBack
+ com.tencent.xmagic.panel.XmagicPanelView$ValueAnimationListener
+com/tencent/xmagic/demo/BuildConfig.java
+ com.tencent.xmagic.demo.BuildConfig
+com/tencent/xmagic/XmagicApiWrapper.java
+ com.tencent.xmagic.XmagicApiWrapper
+ com.tencent.xmagic.XmagicApiWrapper$1
+ com.tencent.xmagic.XmagicApiWrapper$2
+ com.tencent.xmagic.XmagicApiWrapper$3
+ com.tencent.xmagic.XmagicApiWrapper$OnCheckBeautyAuthComplete
+com/tencent/xmagic/config/MotionType.java
+ com.tencent.xmagic.config.MotionType
+com/tencent/xmagic/download/MotionDLModel.java
+ com.tencent.xmagic.download.MotionDLModel

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header"/>
+
+
+    <net.csdn.roundview.RoundFrameLayout
+        android:background="@color/color_green"
+        app:rTopRadius="80pt"
+        android:layout_weight="1"
+        android:layout_marginTop="53.15pt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80pt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95pt"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:text="FRIENDS"
+                    android:textColor="@color/black"
+                    android:textSize="64pt" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_marginRight="50pt"
+                        android:src="@drawable/ic_arrow_down" />
+
+                    <ImageView
+                        android:id="@+id/iv_close"
+                        android:layout_width="80pt"
+                        android:layout_height="80pt"
+                        android:layout_marginRight="95pt"
+                        android:src="@drawable/ic_circle_close" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </net.csdn.roundview.RoundFrameLayout>
+</LinearLayout>

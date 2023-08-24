@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:banner_auto_loop="false"
+        app:banner_indicator_gravity="center"
+        app:banner_indicator_height="@dimen/dp_6"
+        app:banner_indicator_marginBottom="200dp"
+        app:banner_indicator_normal_color="#e8e8e8"
+        app:banner_indicator_normal_width="6dp"
+        app:banner_indicator_radius="@dimen/dp_3"
+        app:banner_indicator_selected_color="@color/color_green"
+        app:banner_indicator_selected_width="6dp" />
+
+    <FrameLayout
+        android:id="@+id/fl_slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/bg_slider"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/dp_35"
+            android:background="@color/color_green"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_start1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/slider_start" />
+            <LinearLayout
+                android:id="@+id/ll_start_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/slider_start" />
+
+                <FrameLayout
+                    android:id="@+id/fl_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dp_35">
+
+                    <ImageView
+                        android:id="@+id/iv_top_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_11"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/slider_line" />
+
+                    <ImageView
+                        android:id="@+id/iv_bottom_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_11"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/slider_line" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:layout_gravity="end"
+                android:src="@mipmap/slider_circle" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="START"
+            android:textColor="@color/color_green"
+            android:textStyle="bold" />
+
+        <com.litao.slider.NiftySlider
+            android:id="@+id/nifty_slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_gravity="center"
+            android:paddingLeft="11dp"
+            android:value="0"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:enableDrawHalo="true"
+            app:haloColor="@color/color_yellow"
+            app:thumbRadius="@dimen/dp_35"
+            app:thumbWidth="@dimen/dp_70"
+            app:thumbWithinTrackBounds="false"
+            app:trackColor="@color/color_green"
+            app:trackColorInactive="@color/transparent"
+            app:trackCornersRadius="0dp"
+            app:trackHeight="48dp" />
+
+        <ImageView
+            android:id="@+id/iv_end_circle"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_gravity="end"
+            android:src="@mipmap/ic_end_circle"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

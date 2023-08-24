@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="250pt"
+    android:height="250pt"
+    android:viewportWidth="250"
+    android:viewportHeight="250">
+    <group android:name="add_btn">
+
+
+        <group
+            android:name="add">
+            <path
+                android:fillColor="#28d171"
+
+                android:pathData="M102.83,15h44.33A87.83,87.83 0,0 1,235 102.83v44.33A87.83,87.83 0,0 1,147.16 235L102.83,235A87.83,87.83 0,0 1,15 147.16L15,102.83A87.83,87.83 0,0 1,102.83 15Z" />
+        </group>
+        <path
+            android:fillColor="#dfdfdf"
+            android:pathData="M79.33,115.87h91.34v18.27h-91.34z" />
+        <path
+            android:fillColor="#dfdfdf"
+            android:pathData="M134.13,79.33l-0,91.34l-18.27,0l-0,-91.34z" />
+    </group>
+</vector>

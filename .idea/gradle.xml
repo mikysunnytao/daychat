@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SVGAPlayer" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dkplayer-java" />
+            <option value="$PROJECT_DIR$/dkplayer-players" />
+            <option value="$PROJECT_DIR$/dkplayer-players/exo" />
+            <option value="$PROJECT_DIR$/dkplayer-players/ijk" />
+            <option value="$PROJECT_DIR$/dkplayer-ui" />
+            <option value="$PROJECT_DIR$/dkplayer-videocache" />
+            <option value="$PROJECT_DIR$/flowlayout" />
+            <option value="$PROJECT_DIR$/glide" />
+            <option value="$PROJECT_DIR$/nasinet" />
+            <option value="$PROJECT_DIR$/picture_library" />
+            <option value="$PROJECT_DIR$/slider" />
+            <option value="$PROJECT_DIR$/superplayerdemo" />
+            <option value="$PROJECT_DIR$/superplayerkit" />
+            <option value="$PROJECT_DIR$/tiui" />
+            <option value="$PROJECT_DIR$/tuicallkit" />
+            <option value="$PROJECT_DIR$/tuichat" />
+            <option value="$PROJECT_DIR$/tuicontact" />
+            <option value="$PROJECT_DIR$/tuiconversation" />
+            <option value="$PROJECT_DIR$/tuicore" />
+            <option value="$PROJECT_DIR$/tuigroup" />
+            <option value="$PROJECT_DIR$/ucrop" />
+            <option value="$PROJECT_DIR$/ugcvideoeditdemo" />
+            <option value="$PROJECT_DIR$/ugcvideojoindemo" />
+            <option value="$PROJECT_DIR$/ugcvideorecorddemo" />
+            <option value="$PROJECT_DIR$/ugcvideouploaddemo" />
+            <option value="$PROJECT_DIR$/video-compressor" />
+            <option value="$PROJECT_DIR$/video-effect" />
+            <option value="$PROJECT_DIR$/video-record" />
+            <option value="$PROJECT_DIR$/xmagickit" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

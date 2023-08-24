@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.daychat.live.widget.listvideo.ListVideoView
+        android:id="@+id/tiktok_View"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/sdv_cover"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#000" />
+
+
+    <net.csdn.roundview.RoundLinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:rTopRadius="80pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30pt">
+
+            <net.csdn.roundview.CircleImageView
+                android:id="@+id/iv_user_header"
+                android:layout_width="150pt"
+                android:layout_height="150pt"
+                android:layout_marginStart="95pt"
+                android:layout_marginTop="32pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40pt"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32pt"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:includeFontPadding="false"
+                    android:text="골프 레벨업을 위한 모임"
+                    android:textColor="@color/black"
+                    android:textSize="48pt" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30pt"
+                    android:orientation="horizontal">
+
+                    <net.csdn.roundview.RoundTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="58pt"
+                        android:drawableStart="@drawable/ic_sharp"
+                        android:drawablePadding="10pt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30pt"
+                        android:paddingRight="30pt"
+                        android:text="골프"
+                        android:textSize="32pt"
+                        app:rRadius="29pt"
+                        app:rStrokeColor="#707070"
+                        app:rStrokeWidth="1pt" />
+
+                    <net.csdn.roundview.RoundTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="58pt"
+                        android:layout_marginStart="10pt"
+                        android:drawableStart="@drawable/ic_location_small"
+                        android:drawablePadding="10pt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30pt"
+                        android:paddingRight="30pt"
+                        android:text="인천골프장"
+                        android:textSize="32pt"
+                        app:rRadius="29pt"
+                        app:rStrokeColor="#707070"
+                        app:rStrokeWidth="1pt" />
+
+                    <net.csdn.roundview.RoundTextView
+                        android:id="@+id/tv_group_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58pt"
+                        android:layout_marginStart="10pt"
+                        android:drawableStart="@drawable/ic_personal"
+                        android:drawablePadding="10pt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30pt"
+                        android:paddingRight="30pt"
+                        android:text="198명"
+                        android:textSize="32pt"
+                        app:rRadius="29pt"
+                        app:rStrokeColor="#707070"
+                        app:rStrokeWidth="1pt" />
+
+                    <net.csdn.roundview.RoundTextView
+                        android:id="@+id/tv_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58pt"
+                        android:layout_marginStart="10pt"
+                        android:drawableStart="@drawable/ic_settings"
+                        android:drawablePadding="10pt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30pt"
+                        android:paddingRight="30pt"
+                        android:text="설정관리"
+                        android:textSize="32pt"
+                        app:rRadius="29pt"
+                        android:background="#efea72"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </net.csdn.roundview.RoundLinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="80pt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_avatar"
+            android:layout_width="150pt"
+            android:layout_height="180pt"
+            android:layout_gravity="end"
+            android:layout_marginBottom="51pt">
+
+            <net.csdn.roundview.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="150pt"
+                android:layout_height="150pt"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/header16" />
+
+            <ImageView
+                android:id="@+id/im_guanzhu"
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_add_red" />
+
+        </RelativeLayout>
+
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:layout_gravity="end"
+            android:layout_marginBottom="81pt"
+            android:orientation="vertical"
+            android:background="#99707070"
+            app:rRadius="75pt">
+
+            <ImageView
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:src="@mipmap/message_2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_pinglun_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </net.csdn.roundview.RoundLinearLayout>
+
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:id="@+id/ll_zan"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:layout_gravity="end"
+            android:layout_marginBottom="81pt"
+            android:orientation="vertical"
+            android:background="#99707070"
+            app:rRadius="75pt">
+
+            <ImageView
+                android:id="@+id/iv_zan"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:src="@mipmap/zan"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </net.csdn.roundview.RoundLinearLayout>
+
+        <net.csdn.roundview.RoundLinearLayout
+            android:id="@+id/ll_zhuanfa"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:background="#99707070"
+            android:layout_marginBottom="160pt"
+            app:rRadius="75pt">
+
+            <ImageView
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:src="@mipmap/zhuanfa"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_zhuan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </net.csdn.roundview.RoundLinearLayout>
+
+        <ImageView
+            android:layout_width="225pt"
+            android:layout_height="150pt"
+
+            android:layout_marginBottom="320pt"
+            android:src="@mipmap/ic_short_icon" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="286pt"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_height="286pt"
+        android:layout_marginBottom="1255pt"
+        android:src="@mipmap/ic_pause_btn"
+        android:visibility="gone" />
+</FrameLayout>

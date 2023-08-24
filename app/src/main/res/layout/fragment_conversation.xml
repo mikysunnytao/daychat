@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_yellow"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <FrameLayout
+        android:id="@+id/fl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <fragment-->
+<!--            android:id="@+id/chat_fragment"-->
+<!--            android:name="com.daychat.live.ui.fragment.chat.ChatNavFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+    </FrameLayout>
+</LinearLayout>
