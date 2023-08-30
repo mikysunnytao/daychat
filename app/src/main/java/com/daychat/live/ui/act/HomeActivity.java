@@ -238,7 +238,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> implements Home
             }
         });
 
-        nav2.setOnClickListener(v -> {
+        nav3.setOnClickListener(v -> {
 //            dealWithFragment(1);
 //            switchShortVideoTab(1);
 //            vpMain.setCurrentItem(1);
@@ -262,7 +262,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> implements Home
 //                showMenu = !showMenu;
             }
         });
-        nav3.setOnClickListener(v -> {
+        nav2.setOnClickListener(v -> {
             FragmentManager manager = homePageFragment.getChildFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();
             String tag = ContactFragment.class.getName();

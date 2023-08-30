@@ -12,6 +12,7 @@ import com.daychat.live.util.Config;
 import com.daychat.live.util.TxPicturePushUtils;
 import com.daychat.live.widget.ToastUtils;
 import com.kongzue.dialogx.DialogX;
+import com.kongzue.dialogx.style.MaterialStyle;
 import com.meiyinzb.nasinet.utils.AppManager;
 import com.orhanobut.hawk.Hawk;
 import com.qiniu.pili.droid.shortvideo.PLShortVideoEnv;
@@ -63,6 +64,8 @@ public class MyApp extends Application{
         TUIThemeManager.addSeriousTheme(R.style.DemoSeriousTheme);
         DialogX.init(this);
         PLShortVideoEnv.init(this);
+        DialogX.globalStyle = MaterialStyle.style();
+        DialogX.globalTheme = DialogX.THEME.DARK;
         //初始化X5内核
         QbSdk.initX5Environment(this, new QbSdk.PreInitCallback() {
             @Override

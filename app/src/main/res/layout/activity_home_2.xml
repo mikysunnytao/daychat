@@ -37,7 +37,7 @@
             android:layout_height="340pt"
             android:background="@drawable/menu_shape"
             android:visibility="gone"
-           app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
+            app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:rTopRadius="340pt">
@@ -85,28 +85,28 @@
                 android:layout_width="120pt"
                 android:layout_height="120pt"
                 android:layout_marginStart="95pt"
-                android:src="@drawable/circle_icon" />
+                android:src="@mipmap/ic_home" />
 
             <ImageView
                 android:id="@+id/nav2"
                 android:layout_width="120pt"
                 android:layout_height="120pt"
                 android:layout_marginStart="100pt"
-                android:src="@drawable/circle_icon" />
+                android:src="@mipmap/ic_group" />
 
             <ImageView
                 android:id="@+id/nav3"
                 android:layout_width="120pt"
                 android:layout_height="120pt"
                 android:layout_marginStart="420pt"
-                android:src="@drawable/circle_icon" />
+                android:src="@mipmap/ic_chat" />
 
             <ImageView
                 android:id="@+id/nav4"
                 android:layout_width="120pt"
                 android:layout_height="120pt"
                 android:layout_marginStart="100pt"
-                android:src="@drawable/circle_icon" />
+                android:src="@mipmap/ic_my" />
         </LinearLayout>
 
         <ImageView
@@ -125,395 +125,848 @@
     <LinearLayout
         android:layout_width="1000pt"
         android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:background="@color/white"
-        android:orientation="vertical">
+        android:layout_gravity="end">
 
-        <androidx.core.widget.NestedScrollView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="1000pt"
                 android:layout_height="match_parent"
+                android:background="@color/white"
                 android:orientation="vertical">
 
-
-                <TextView
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="80dp"
-                    android:fontFamily="@font/pretendard_semibold"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:text="HOME" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="189pt">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="74.25pt"
+                            android:layout_height="74.25pt"
+                            android:layout_marginEnd="70pt"
+                            android:src="@mipmap/ic_search_black1" />
+
+                        <ImageView
+                            android:layout_width="80pt"
+                            android:layout_height="76.85pt"
+                            android:layout_marginEnd="72.9pt"
+                            android:src="@mipmap/ic_setting_black" />
+
+                        <ImageView
+                            android:layout_width="74.25pt"
+                            android:layout_height="74.25pt"
+                            android:layout_marginEnd="95pt"
+                            android:src="@mipmap/ic_close" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="98pt">
+
+                    <ImageView
+                        android:layout_width="430pt"
+                        android:layout_height="85pt"
+                        android:layout_marginStart="95pt"
+                        android:src="@mipmap/ic_main_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="95pt"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:text="데이채트"
+                        android:textColor="@color/black"
+                        android:textSize="60pt" />
+                </FrameLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1pt"
-                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginStart="95pt"
+                    android:layout_marginTop="52pt"
+                    android:layout_marginEnd="95pt"
                     android:background="#e1e1e1" />
 
-                <LinearLayout
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:textColor="@color/black"
-                        android:gravity="center_vertical"
-                        android:text="CHAT" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="MY CHAT" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="FRIENDS(연락처)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="+ 모임광장" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_30"
-                        android:gravity="center_vertical"
-                        android:text="-장르별(태그)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_30"
-                        android:gravity="center_vertical"
-                        android:text="-추천모임" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_30"
-                        android:gravity="center_vertical"
-                        android:text="-핫한모임" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:gravity="center_vertical"
-                        android:textColor="@color/black"
-                        android:text="FUN" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="VIDEO" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="SHORTS" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="PICTURES" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="STORE" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:gravity="center_vertical"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:textColor="@color/black"
-                        android:text="PICKUP" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="모임(그룹채팅)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="쿠폰" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="배달" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="여행" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="운동" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:gravity="center_vertical"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:textColor="@color/black"
-                        android:text="QUICK +" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="채팅방마들기" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="친구추가하기" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="비디오/쇼츠올리기" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="사진올리기" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:gravity="center_vertical"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:textColor="@color/black"
-                        android:text="MY PAGE (SETTING)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="MY PAGE" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="WALLET (지갑)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="MESSEGE(메세지)" />
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:orientation="vertical">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180pt"
+                            android:layout_marginStart="95pt">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:gravity="center_vertical"
-                        android:fontFamily="@font/pretendard_semibold"
-                        android:textColor="@color/black"
-                        android:text="HELP" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:gravity="center_vertical"
+                                android:text="CHAT"
+                                android:textColor="@color/black"
+                                android:textSize="50pt" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="Q&amp;A" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="HELP (AI CHAT)" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1pt"
-                        android:background="#e1e1e1" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="@dimen/dp_15"
-                        android:gravity="center_vertical"
-                        android:text="CONTACT" />
+                            <ImageView
+                                android:layout_width="44pt"
+                                android:layout_height="6pt"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginEnd="95pt"
+                                android:src="@mipmap/ic_minus_yellow" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3pt"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:background="#e7e7e7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="채트"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="프렌즈"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e7e7e7" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="모임"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e7e7e7" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="147pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="장르별모임"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="147pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="추천모임"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
 
 
-                </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="147pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="핫한모임"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/pretendard_semibold"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:text="ABOUT" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
 
-                <ImageView
-                    android:layout_width="600pt"
-                    android:src="@mipmap/ic_main_logo"
-                    android:layout_marginStart="@dimen/dp_15"
-                    android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt"
+                                android:layout_marginTop="52pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/pretendard_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="FUN"
+                                    android:textColor="@color/black"
+                                    android:textSize="50pt" />
+
+                                <ImageView
+                                    android:layout_width="44pt"
+                                    android:layout_height="6pt"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_minus_yellow" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="비디오"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="숏츠"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="픽쳐"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt"
+                                android:layout_marginTop="52pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/pretendard_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="PICKUP"
+                                    android:textColor="@color/black"
+                                    android:textSize="50pt" />
+
+                                <ImageView
+                                    android:layout_width="44pt"
+                                    android:layout_height="6pt"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_minus_yellow" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="모임"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="쿠폰"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="배달"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="여행"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="운동"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt"
+                                android:layout_marginTop="52pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/pretendard_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="MY PAGE"
+                                    android:textColor="@color/black"
+                                    android:textSize="50pt" />
+
+                                <ImageView
+                                    android:layout_width="44pt"
+                                    android:layout_height="6pt"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_minus_yellow" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="마이페이지"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="월릿 (지갑)"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="메세지"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginEnd="95pt"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt"
+                                android:layout_marginTop="52pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/pretendard_bold"
+                                    android:gravity="center_vertical"
+                                    android:text="HELP"
+                                    android:textColor="@color/black"
+                                    android:textSize="50pt" />
+
+                                <ImageView
+                                    android:layout_width="44pt"
+                                    android:layout_height="6pt"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_minus_yellow" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="Q&amp;A"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="HELP"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180pt">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="74pt"
+                                    android:fontFamily="@font/pretendard_medium"
+                                    android:text="CONTACT"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@mipmap/ic_arrow_right_gray" />
+                            </FrameLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1pt"
+                                android:background="#e1e1e1" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="180pt"
+                            android:layout_marginStart="95pt">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/pretendard_semibold"
+                                    android:gravity="center_vertical"
+                                    android:text="SETTINGS"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="42pt"
+                                    android:layout_height="42pt"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="36pt"
+                                    android:src="@mipmap/ic_setting_black" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:src="@mipmap/ic_arrow_right_gray" />
+                        </FrameLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginTop="342pt"
+                            android:src="@mipmap/ic_logo_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="95pt"
+                            android:layout_marginTop="193pt"
+                            android:layout_marginBottom="378pt"
+                            android:fontFamily="@font/pretendard_medium"
+                            android:lineHeight="60pt"
+                            android:maxWidth="708pt"
+                            android:text="Copyright © 2023 DayCAHT. All rights reserved. ( Version：1.0.1 )"
+                            android:textColor="#b2b2b2"
+                            android:textSize="30pt" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
             </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+
+            <ImageView
+                android:layout_width="144pt"
+                android:layout_height="144pt"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="95pt"
+                android:visibility="gone"
+                android:layout_marginBottom="356pt"
+                android:src="@mipmap/ic_scroll_top" />
+        </FrameLayout>
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

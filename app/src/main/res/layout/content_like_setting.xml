@@ -8,19 +8,19 @@
         android:layout_width="match_parent"
         android:text="1.동영상 및 사진 업로드"
         android:gravity="center_vertical"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_height="@dimen/dp_50"/>
     <TextView
         android:layout_width="match_parent"
         android:text="2.동영상 및 사진 관리"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:gravity="center_vertical"
         android:layout_height="@dimen/dp_50"/>
     <TextView
         android:layout_width="match_parent"
         android:text="3.분석 및 수익화 모니터링"
         android:gravity="center_vertical"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_height="@dimen/dp_50"/>
 
 </LinearLayout>
